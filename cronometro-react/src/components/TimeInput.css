@@ -1,0 +1,47 @@
+.time-input-container {
+  display: flex;
+  flex-direction: column; /* Stack label on top of input */
+  align-items: flex-start; /* Align items to the start (left) */
+  margin-bottom: 0.5rem; /* Consistent margin */
+  width: 100%; /* Take full width from parent */
+}
+
+.time-input-container label {
+  margin-bottom: 0.3rem; /* Space between label and input */
+  font-size: 0.9rem; /* Smaller label */
+  color: #555;
+  font-weight: 600;
+}
+
+.time-input-container input {
+  padding: 0.75rem; /* More padding for a taller input */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* Consistent border-radius */
+  width: 100%; /* Make input take full width */
+  font-size: 1.1rem; /* Larger font in input */
+  text-align: left; /* Align text to left, or center if preferred */
+  background-color: #fdfdfd;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.time-input-container input:focus {
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2); /* Subtle glow on focus */
+  outline: none;
+}
+
+.time-input-container input:disabled {
+  background-color: #ecf0f1; /* Slightly different background when disabled */
+  color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Ensure number input spinners are hidden (also handled globally in index.css) */
+.time-input-container input[type=number]::-webkit-inner-spin-button,
+.time-input-container input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.time-input-container input[type=number] {
+  -moz-appearance: textfield;
+}

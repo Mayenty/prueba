@@ -1,0 +1,31 @@
+.time-display-container {
+  display: flex;
+  flex-direction: row; /* Keep label and value in a row */
+  align-items: center; /* Vertically align items in the center */
+  justify-content: space-between; /* Puts label on left, value on right */
+  padding: 0.75rem 0.25rem; /* Vertical padding, minimal horizontal */
+  border: 1px solid #e0e0e0; /* Light border for definition */
+  border-radius: 6px; /* Consistent border-radius */
+  background-color: #f9f9f9; /* Slightly off-white background */
+  margin-bottom: 0.5rem; /* Consistent margin */
+  width: 100%; /* Take full width from parent */
+}
+
+.time-display-label {
+  margin-left: 0.5rem; /* Add some space to the left of the label */
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.time-display-value {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50; /* Dark blue for emphasis */
+  background-color: transparent; /* Remove previous background */
+  padding: 0.25rem 0.5rem; /* Adjust padding as needed */
+  border-radius: 4px;
+  margin-right: 0.5rem; /* Add some space to the right of the value */
+  min-width: auto; /* Reset min-width if not needed */
+  text-align: right; /* Align value to the right */
+}

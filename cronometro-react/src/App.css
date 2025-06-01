@@ -1,0 +1,79 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* White background for the card */
+  padding: 2rem 2.5rem; /* Increased padding */
+  border-radius: 12px; /* Softer border radius */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0,0,0,0.08); /* Enhanced shadow */
+  width: 100%;
+  max-width: 400px; /* Control max width of the app card */
+  margin: 1rem auto; /* Center app on the page (if #root isn't already doing it) */
+}
+
+.App-header {
+  width: 100%;
+  text-align: center;
+}
+
+.App-header h1 {
+  color: #2c3e50; /* Darker, more modern blue */
+  margin-bottom: 1.5rem; /* More space below title */
+  font-size: 2.25rem; /* Larger title */
+}
+
+.time-inputs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Make children take full width of container */
+  gap: 0.75rem; /* Space between input/display components */
+  margin-bottom: 1.5rem; /* Space before the button */
+  width: 100%; /* Ensure container takes available width */
+}
+
+.App-header button {
+  padding: 0.75rem 1.5rem; /* Balanced padding */
+  font-size: 1.1rem; /* Slightly larger font */
+  font-weight: 600;
+  color: white;
+  background-color: #3498db; /* Vibrant blue */
+  border: none;
+  border-radius: 8px; /* Softer button edges */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+  width: 100%; /* Make button full width */
+  margin-top: 0.5rem; /* Space above the button */
+}
+
+.App-header button:hover:not(:disabled) {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.App-header button:active:not(:disabled) {
+  background-color: #2471a3; /* Even darker on active/click */
+  transform: translateY(1px); /* Subtle press effect */
+}
+
+.App-header button:disabled {
+  background-color: #bdc3c7; /* Gray for disabled state */
+  color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+.App-header h2 {
+  margin-top: 1.5rem; /* Space above "Tempo Restante" */
+  color: #34495e; /* Another shade of dark blue/gray */
+  font-size: 1.2rem;
+}
+
+.App-header p {
+  font-size: 2.5rem; /* Larger time display */
+  color: #333;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 1.5px; /* Spacing between numbers */
+  background-color: #f9f9f9;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
